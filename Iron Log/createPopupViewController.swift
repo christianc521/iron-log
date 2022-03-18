@@ -38,7 +38,6 @@ class createPopupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     @IBAction func backgroundPressed(_ sender: UIControl) {
         dismiss(animated: true, completion: nil)
@@ -47,7 +46,7 @@ class createPopupViewController: UIViewController {
     @IBAction func closePressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    //let muscleGroup = muscleSegment.titleForSegment(at: muscleSegment.selectedSegmentIndex)
+    
     @IBAction func addExercise(_ sender: UIButton) {
         exercise.muscleGroup = muscleSegment.titleForSegment(at: muscleSegment.selectedSegmentIndex) ?? ""
         if let workout = workoutText.text, let sets = setsText.text, let reps = repsText.text{
@@ -65,14 +64,5 @@ class createPopupViewController: UIViewController {
             present(errorAlertController, animated: true, completion: nil)
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

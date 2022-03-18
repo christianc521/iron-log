@@ -6,33 +6,49 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var videoLayer: UIView!
+    @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet weak var start: UIButton!
+    @IBOutlet weak var create: UIButton!
+    @IBOutlet weak var manage: UIButton!
+    @IBOutlet weak var stack: UIStackView!
+    
+    var player: AVPlayer!
+    var playerLooper: NSObject?
+    var playerLayer:AVPlayerLayer!
+    var queuePlayer: AVQueuePlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        playVideo()
+        videoLayer.bringSubviewToFront(logoImage)
+        videoLayer.bringSubviewToFront(start)
+        videoLayer.bringSubviewToFront(create)
+        videoLayer.bringSubviewToFront(manage)
+        videoLayer.bringSubviewToFront(stack)
     }
 
-    @IBAction func manageWorkoutsPressed(_ sender: UIButton) {
-        let url = getDocumentsDirectory().appendingPathComponent("savedWorkouts.txt")
-        do {
-         // Get the saved data
-         let savedData = try Data(contentsOf: url)
-         // Convert the data back into a string
-         if let savedString = String(data: savedData, encoding: .utf8) {
-            print(savedString)
-         }
-        } catch {
-         // Catch any errors
-         print("Unable to read the file")
+    func playVideo() {
+        guard let path = Bundle.main.path(forResource: "background", ofType: "mp4") else {
+            return
         }
+        let url = URL(fileURLWithPath: path)
+        
+        let playerItem = AVPlayerItem(url: url as URL)
+        self.player = AVQueuePlayer(items: [playerItem])
+        self.playerLayer = AVPlayerLayer(player: self.player)
+        self.playerLooper = AVPlayerLooper(player: self.player! as! AVQueuePlayer, templateItem: playerItem)
+        self.videoLayer.layer.addSublayer(self.playerLayer!)
+        self.playerLayer?.frame = self.view.frame
+        self.player?.play()
+        
     }
     
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
-    }
+    
     
     
 }

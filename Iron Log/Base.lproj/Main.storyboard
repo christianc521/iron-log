@@ -24,36 +24,64 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="smI-MB-5yC">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YP-77-AaH">
-                                        <rect key="frame" x="147" y="342" width="120" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Start Workout"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJs-nO-CsV">
-                                        <rect key="frame" x="145" y="403" width="125" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Create Workout"/>
-                                        <connections>
-                                            <segue destination="vmA-qK-vuA" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="HAD-Wq-Vc0"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lyy-CC-uY1">
-                                        <rect key="frame" x="137" y="464" width="141" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Manage Workouts"/>
-                                        <connections>
-                                            <action selector="manageWorkoutsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UIA-l9-xg6"/>
-                                        </connections>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0Cx-0u-rO6">
-                                        <rect key="frame" x="27" y="117" width="360" height="191"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0Cx-0u-rO6">
+                                        <rect key="frame" x="10" y="100" width="394" height="368"/>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="C3R-j6-fzn">
+                                        <rect key="frame" x="147" y="498" width="141" height="153"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YP-77-AaH">
+                                                <rect key="frame" x="0.0" y="0.0" width="141" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Start Workout" cornerStyle="medium">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="0.47647088770000001" green="0.7608608603" blue="0.74509966370000003" alpha="0.35095308260000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="fwW-d8-OVB" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="UPa-dQ-BHw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJs-nO-CsV">
+                                                <rect key="frame" x="0.0" y="61" width="141" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Create Workout" cornerStyle="medium">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="0.47647088770000001" green="0.7608608603" blue="0.74509966370000003" alpha="0.35095308260000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="vmA-qK-vuA" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="HAD-Wq-Vc0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lyy-CC-uY1">
+                                                <rect key="frame" x="0.0" y="122" width="141" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Manage Workouts" cornerStyle="medium">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="0.47647088770000001" green="0.7608608603" blue="0.74509966370000003" alpha="0.35095308260000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="FLA-Fw-O3N" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="315-wg-Weg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="C3R-j6-fzn" firstAttribute="leading" secondItem="smI-MB-5yC" secondAttribute="leading" constant="147" id="11l-8S-ErB"/>
+                                    <constraint firstAttribute="trailing" secondItem="C3R-j6-fzn" secondAttribute="trailing" constant="126" id="Bib-UO-biR"/>
+                                    <constraint firstItem="0Cx-0u-rO6" firstAttribute="leading" secondItem="smI-MB-5yC" secondAttribute="leading" constant="10" id="Fyg-CL-bqv"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Cx-0u-rO6" secondAttribute="trailing" constant="10" id="IPa-sy-NZj"/>
+                                    <constraint firstItem="C3R-j6-fzn" firstAttribute="top" secondItem="0Cx-0u-rO6" secondAttribute="bottom" constant="30" id="Oo7-Nu-DDg"/>
+                                    <constraint firstItem="0Cx-0u-rO6" firstAttribute="top" secondItem="smI-MB-5yC" secondAttribute="top" constant="100" id="aK8-0g-XiJ"/>
+                                    <constraint firstItem="0Cx-0u-rO6" firstAttribute="centerX" secondItem="smI-MB-5yC" secondAttribute="centerX" id="pAg-tn-FSV"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -65,10 +93,268 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="smI-MB-5yC" secondAttribute="trailing" id="jWR-2A-QH7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="OE6-Ct-3mi"/>
+                    <connections>
+                        <outlet property="create" destination="RJs-nO-CsV" id="he5-Ib-ppi"/>
+                        <outlet property="logoImage" destination="0Cx-0u-rO6" id="y3O-eK-5Dp"/>
+                        <outlet property="manage" destination="Lyy-CC-uY1" id="Foo-ra-mMt"/>
+                        <outlet property="stack" destination="C3R-j6-fzn" id="dZB-nz-ZmM"/>
+                        <outlet property="start" destination="9YP-77-AaH" id="eLQ-4M-aOF"/>
+                        <outlet property="videoLayer" destination="smI-MB-5yC" id="NhQ-aa-TSH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="121.73913043478262" y="92.410714285714278"/>
+            <point key="canvasLocation" x="52" y="92"/>
+        </scene>
+        <!--Select Workout View Controller-->
+        <scene sceneID="wEk-a5-K0G">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="fwW-d8-OVB" customClass="SelectWorkoutViewController" customModule="Iron_Log" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o4n-VS-LmG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G25-xJ-6W8">
+                                <rect key="frame" x="150" y="781" width="114" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Go Back"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="fwW-d8-OVB" eventType="touchUpInside" id="nKq-fr-nHl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jSn-kP-2nf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G25-xJ-6W8" firstAttribute="centerX" secondItem="o4n-VS-LmG" secondAttribute="centerX" id="94D-bx-vmb"/>
+                            <constraint firstItem="jSn-kP-2nf" firstAttribute="bottom" secondItem="G25-xJ-6W8" secondAttribute="bottom" constant="50" id="hym-ow-4aH"/>
+                            <constraint firstItem="jSn-kP-2nf" firstAttribute="trailing" secondItem="G25-xJ-6W8" secondAttribute="trailing" constant="150" id="rsx-4W-eNA"/>
+                            <constraint firstItem="G25-xJ-6W8" firstAttribute="leading" secondItem="jSn-kP-2nf" secondAttribute="leading" constant="150" id="wss-uj-ZvS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="F6Q-qD-XhI" kind="presentation" identifier="showWorkout" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="hIq-6D-YRB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CGT-ws-20J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905.79710144927549" y="-572.54464285714278"/>
+        </scene>
+        <!--In Workout View Controller-->
+        <scene sceneID="Sm4-6O-kop">
+            <objects>
+                <viewController id="F6Q-qD-XhI" customClass="InWorkoutViewController" customModule="Iron_Log" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dSd-fw-JWe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epz-kw-MDj">
+                                <rect key="frame" x="125.5" y="261.5" width="163" height="17"/>
+                                <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40n-vg-e62">
+                                <rect key="frame" x="151" y="234.5" width="112.5" height="17"/>
+                                <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bYC-yl-VTO">
+                                <rect key="frame" x="112" y="358.5" width="190" height="54"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tYb-9h-DgB">
+                                        <rect key="frame" x="45" y="0.0" width="100" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SET:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2c-sq-ar8">
+                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgc-Iz-tQc">
+                                                <rect key="frame" x="52.5" y="0.0" width="14" height="17"/>
+                                                <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92g-cM-cJE">
+                                                <rect key="frame" x="71.5" y="0.0" width="9.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heH-iu-AXo">
+                                                <rect key="frame" x="86" y="0.0" width="14" height="17"/>
+                                                <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="vDV-gN-6e1">
+                                        <rect key="frame" x="0.0" y="37" width="190" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Reps:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXs-ik-Ztp">
+                                                <rect key="frame" x="0.0" y="0.0" width="158" height="17"/>
+                                                <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbK-xt-Vm2">
+                                                <rect key="frame" x="176" y="0.0" width="14" height="17"/>
+                                                <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="alx-Kt-xsz">
+                                <rect key="frame" x="55" y="482.5" width="304" height="134.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keJ-oF-Exx">
+                                        <rect key="frame" x="145" y="0.0" width="14" height="17"/>
+                                        <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="gDM-C3-gXC">
+                                        <rect key="frame" x="0.0" y="34" width="304" height="52.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45W-7v-V3Y">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="52.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="-">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="decreaseRepsPressed:" destination="F6Q-qD-XhI" eventType="touchUpInside" id="OqR-5x-qs2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIC-wF-DYm">
+                                                <rect key="frame" x="110" y="0.0" width="84" height="52.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="TARGET">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="targetRepsPressed:" destination="F6Q-qD-XhI" eventType="touchUpInside" id="5JN-KG-Dwy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWV-bg-YNc">
+                                                <rect key="frame" x="220" y="0.0" width="84" height="52.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="increaseRepsPressed:" destination="F6Q-qD-XhI" eventType="touchUpInside" id="Gtl-l6-VpT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUu-7X-xHF">
+                                        <rect key="frame" x="112.5" y="103.5" width="79.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Next Set"/>
+                                        <connections>
+                                            <action selector="nextSetPressed:" destination="F6Q-qD-XhI" eventType="touchUpInside" id="be3-Dx-5px"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Meb-zS-eJh">
+                                <rect key="frame" x="62" y="64" width="290.5" height="130.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycU-8s-jx9">
+                                        <rect key="frame" x="109.5" y="0.0" width="71.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9q-xB-z7e">
+                                        <rect key="frame" x="77" y="35" width="136" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currently Working on:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YR-Xm-TjK">
+                                        <rect key="frame" x="0.0" y="78.5" width="290.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crT-gp-hjx">
+                                        <rect key="frame" x="63.5" y="113.5" width="163" height="17"/>
+                                        <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BIu-MH-5nG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="40n-vg-e62" firstAttribute="centerX" secondItem="dSd-fw-JWe" secondAttribute="centerX" id="6Ea-12-6Gl"/>
+                            <constraint firstItem="Meb-zS-eJh" firstAttribute="centerX" secondItem="dSd-fw-JWe" secondAttribute="centerX" id="9Qc-Gf-O8B"/>
+                            <constraint firstItem="40n-vg-e62" firstAttribute="top" secondItem="Meb-zS-eJh" secondAttribute="bottom" constant="40" id="GeT-lN-hEE"/>
+                            <constraint firstItem="bYC-yl-VTO" firstAttribute="centerX" secondItem="dSd-fw-JWe" secondAttribute="centerX" id="Ojh-Lu-pMg"/>
+                            <constraint firstItem="epz-kw-MDj" firstAttribute="top" secondItem="40n-vg-e62" secondAttribute="bottom" constant="10" id="Qu8-YR-0sT"/>
+                            <constraint firstItem="bYC-yl-VTO" firstAttribute="top" secondItem="epz-kw-MDj" secondAttribute="bottom" constant="80" id="YuG-Ev-1aq"/>
+                            <constraint firstItem="alx-Kt-xsz" firstAttribute="centerX" secondItem="dSd-fw-JWe" secondAttribute="centerX" id="de8-aF-cgD"/>
+                            <constraint firstItem="Meb-zS-eJh" firstAttribute="top" secondItem="BIu-MH-5nG" secondAttribute="top" constant="20" id="sB7-7m-PH8"/>
+                            <constraint firstItem="alx-Kt-xsz" firstAttribute="top" secondItem="bYC-yl-VTO" secondAttribute="bottom" constant="70" id="sSb-d0-Zli"/>
+                            <constraint firstItem="alx-Kt-xsz" firstAttribute="centerX" secondItem="dSd-fw-JWe" secondAttribute="centerX" id="uNu-M1-H3d"/>
+                            <constraint firstItem="epz-kw-MDj" firstAttribute="centerX" secondItem="dSd-fw-JWe" secondAttribute="centerX" id="zVU-OF-YWb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="decreaseRepsButton" destination="45W-7v-V3Y" id="bAn-OQ-R4X"/>
+                        <outlet property="exerciseLabel" destination="epz-kw-MDj" id="1rl-cI-2UR"/>
+                        <outlet property="muscleLabel" destination="crT-gp-hjx" id="q0h-aP-HSR"/>
+                        <outlet property="nextSetButton" destination="oUu-7X-xHF" id="XjI-uf-lbe"/>
+                        <outlet property="repLabel" destination="wbK-xt-Vm2" id="qS4-Pr-AGb"/>
+                        <outlet property="repsHit" destination="keJ-oF-Exx" id="p9m-p4-5WJ"/>
+                        <outlet property="setLabel" destination="tgc-Iz-tQc" id="QWO-39-Ldo"/>
+                        <outlet property="targetSetsLabel" destination="heH-iu-AXo" id="8li-Tc-6wQ"/>
+                        <outlet property="timeLabel" destination="t9q-xB-z7e" id="DlZ-Af-trF"/>
+                        <outlet property="workoutLabel" destination="ycU-8s-jx9" id="ATp-5D-lcQ"/>
+                        <segue destination="RU5-Tj-oqv" kind="presentation" identifier="showCompleted" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="31G-zx-pGc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5f3-op-yeb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647.826086956522" y="-573.21428571428567"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qhn-yA-0m0">
+            <objects>
+                <viewController id="RU5-Tj-oqv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="knS-Mu-wGX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMx-GX-VKD">
+                                <rect key="frame" x="118" y="357" width="179" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Go To Homescreen"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="cEA-Gv-kgD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gXf-nB-V23"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u2B-Bh-Wat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2385.507246376812" y="-573.21428571428567"/>
         </scene>
         <!--Create View Controller-->
         <scene sceneID="Yvd-5H-Kfa">
@@ -78,17 +364,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfq-0X-jRu">
-                                <rect key="frame" x="344" y="52" width="34" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfq-0X-jRu">
+                                <rect key="frame" x="370" y="54" width="34" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                <buttonConfiguration key="configuration" style="plain" title="X">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.62732200380000003" green="1" blue="0.97549526499999994" alpha="0.35095308260000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="closePressed:" destination="vmA-qK-vuA" eventType="touchUpInside" id="MGX-cG-6Ib"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Up-MW-zOa">
-                                <rect key="frame" x="179" y="769" width="56" height="56"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Up-MW-zOa">
+                                <rect key="frame" x="179" y="766" width="56" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="56" id="I62-WZ-jDy"/>
                                     <constraint firstAttribute="height" constant="56" id="rxm-Qg-iNQ"/>
@@ -102,33 +391,42 @@
                                     <segue destination="Ipz-je-jmM" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="Rqc-JZ-Qi8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4p-DW-AcA">
-                                <rect key="frame" x="293" y="782" width="56" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WB-p8-dgd">
-                                <rect key="frame" x="293" y="782" width="56" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WB-p8-dgd">
+                                <rect key="frame" x="318" y="778.5" width="56" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
                                 <connections>
                                     <action selector="savePressed:" destination="vmA-qK-vuA" eventType="touchUpInside" id="eco-Th-A4y"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z63-SY-Sd8">
-                                <rect key="frame" x="116" y="100" width="183" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z63-SY-Sd8">
+                                <rect key="frame" x="40" y="126" width="334" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qu3-MO-pJ2">
+                                <rect key="frame" x="119" y="74" width="176" height="32"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2wU-VM-ObZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9Up-MW-zOa" firstAttribute="centerX" secondItem="qXx-TK-LfI" secondAttribute="centerX" id="Gaa-Wn-8eY"/>
-                            <constraint firstItem="2wU-VM-ObZ" firstAttribute="bottom" secondItem="9Up-MW-zOa" secondAttribute="bottom" constant="40" id="n1I-UT-kjp"/>
+                            <constraint firstItem="2wU-VM-ObZ" firstAttribute="bottom" secondItem="9Up-MW-zOa" secondAttribute="bottom" constant="40" id="7DB-Oo-2AV"/>
+                            <constraint firstItem="2wU-VM-ObZ" firstAttribute="trailing" secondItem="Z63-SY-Sd8" secondAttribute="trailing" constant="40" id="9zu-hE-vmW"/>
+                            <constraint firstItem="2WB-p8-dgd" firstAttribute="centerY" secondItem="9Up-MW-zOa" secondAttribute="centerY" id="AST-4g-J3d"/>
+                            <constraint firstItem="2wU-VM-ObZ" firstAttribute="trailing" secondItem="2WB-p8-dgd" secondAttribute="trailing" constant="40" id="C2k-vI-vR3"/>
+                            <constraint firstItem="Z63-SY-Sd8" firstAttribute="centerX" secondItem="Qu3-MO-pJ2" secondAttribute="centerX" id="ND2-UK-rob"/>
+                            <constraint firstItem="Qu3-MO-pJ2" firstAttribute="top" secondItem="2wU-VM-ObZ" secondAttribute="top" constant="30" id="Pwk-sg-I3n"/>
+                            <constraint firstItem="Z63-SY-Sd8" firstAttribute="centerX" secondItem="qXx-TK-LfI" secondAttribute="centerX" id="Tko-Eo-ujl"/>
+                            <constraint firstItem="Qu3-MO-pJ2" firstAttribute="centerX" secondItem="qXx-TK-LfI" secondAttribute="centerX" id="VAe-1I-mlz"/>
+                            <constraint firstItem="Z63-SY-Sd8" firstAttribute="top" secondItem="Qu3-MO-pJ2" secondAttribute="bottom" constant="20" id="aEI-hS-rfc"/>
+                            <constraint firstItem="Z63-SY-Sd8" firstAttribute="leading" secondItem="2wU-VM-ObZ" secondAttribute="leading" constant="40" id="dqb-hx-0Tx"/>
+                            <constraint firstItem="2wU-VM-ObZ" firstAttribute="trailing" secondItem="bfq-0X-jRu" secondAttribute="trailing" constant="10" id="ede-XS-gxK"/>
+                            <constraint firstItem="9Up-MW-zOa" firstAttribute="centerX" secondItem="qXx-TK-LfI" secondAttribute="centerX" id="gR0-Va-0Cc"/>
+                            <constraint firstItem="bfq-0X-jRu" firstAttribute="top" secondItem="2wU-VM-ObZ" secondAttribute="top" constant="10" id="h75-00-dvY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hdP-2W-VCr"/>
@@ -140,6 +438,50 @@
             </objects>
             <point key="canvasLocation" x="908.69565217391312" y="91.741071428571431"/>
         </scene>
+        <!--Manage View Controller-->
+        <scene sceneID="uJR-Q5-voJ">
+            <objects>
+                <viewController id="FLA-Fw-O3N" customClass="ManageViewController" customModule="Iron_Log" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dMk-ki-wHv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAT-B3-74e">
+                                <rect key="frame" x="74" y="260" width="283" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete All Workouts"/>
+                                <connections>
+                                    <action selector="deleteWorkoutsPressed:" destination="FLA-Fw-O3N" eventType="touchUpInside" id="0cB-9l-8LW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHI-ia-HsQ">
+                                <rect key="frame" x="74" y="299" width="283" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="List All Workouts"/>
+                                <connections>
+                                    <action selector="listWorkoutsPressed:" destination="FLA-Fw-O3N" eventType="touchUpInside" id="x8g-J2-m0b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIx-WO-caX">
+                                <rect key="frame" x="318" y="92" width="34" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                <connections>
+                                    <action selector="closePressed:" destination="FLA-Fw-O3N" eventType="touchUpInside" id="E3N-Rb-Aob"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r1r-bS-39Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NCP-Pu-V5v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="867"/>
+        </scene>
         <!--Create Popup View Controller-->
         <scene sceneID="ggI-ki-x2N">
             <objects>
@@ -148,87 +490,121 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vzG-6o-eRH">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzG-6o-eRH">
                                 <rect key="frame" x="48.5" y="247" width="317" height="305"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pq-15-wyZ">
-                                        <rect key="frame" x="87" y="258" width="50" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Add"/>
-                                        <connections>
-                                            <action selector="addExercise:" destination="Ipz-je-jmM" eventType="touchUpInside" id="Xhd-O1-o7l"/>
-                                        </connections>
-                                    </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vb3-t3-WhL">
-                                        <rect key="frame" x="60" y="102" width="197" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.65778538639999995" green="0.96336261420000002" blue="1" alpha="0.8657891929" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sets" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rFR-7C-z2L">
-                                        <rect key="frame" x="94" y="179" width="50" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.65778538642525441" green="0.96336261423439462" blue="1" alpha="0.86578919287441536" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="postal-code"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reps" textAlignment="natural" minimumFontSize="17" background="square.and.arrow.up.on.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XMk-yw-9yJ">
-                                        <rect key="frame" x="173" y="179" width="50" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.65778538639999995" green="0.96336261420000002" blue="1" alpha="0.8657891929" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="postal-code"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sets &amp; Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlJ-Rp-PuZ">
-                                        <rect key="frame" x="83" y="154" width="148" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bp-AR-VM9">
-                                        <rect key="frame" x="169" y="258" width="69" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
-                                        <connections>
-                                            <action selector="closePressed:" destination="Ipz-je-jmM" eventType="touchUpInside" id="AMK-Sh-CXs"/>
-                                        </connections>
-                                    </button>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7GT-fr-eGN">
-                                        <rect key="frame" x="19" y="20" width="279" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <segments>
-                                            <segment title="Arms"/>
-                                            <segment title="Back"/>
-                                            <segment title="Chest"/>
-                                            <segment title="Legs"/>
-                                            <segment title="Abs"/>
-                                        </segments>
-                                    </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FY-dg-9QZ">
-                                        <rect key="frame" x="153" y="191" width="11" height="11"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="10"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EXERCISE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKM-Zk-NnL">
-                                        <rect key="frame" x="91" y="73" width="135" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Ey8-rP-Jvs">
+                                        <rect key="frame" x="10" y="15" width="297" height="270"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7GT-fr-eGN">
+                                                <rect key="frame" x="9" y="0.0" width="279" height="32"/>
+                                                <segments>
+                                                    <segment title="Arms"/>
+                                                    <segment title="Back"/>
+                                                    <segment title="Chest"/>
+                                                    <segment title="Legs"/>
+                                                    <segment title="Abs"/>
+                                                </segments>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXERCISE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKM-Zk-NnL">
+                                                <rect key="frame" x="81" y="52" width="135" height="21"/>
+                                                <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vb3-t3-WhL">
+                                                <rect key="frame" x="40" y="94" width="217" height="34"/>
+                                                <color key="backgroundColor" red="0.65778538639999995" green="0.96336261420000002" blue="1" alpha="0.8657891929" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Sets &amp; Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlJ-Rp-PuZ">
+                                                <rect key="frame" x="75" y="149" width="147.5" height="14"/>
+                                                <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Duw-T5-NTp">
+                                                <rect key="frame" x="75.5" y="184" width="146" height="34"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sets" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rFR-7C-z2L">
+                                                        <rect key="frame" x="0.0" y="0.0" width="57" height="34"/>
+                                                        <color key="backgroundColor" red="0.65778538642525441" green="0.96336261423439462" blue="1" alpha="0.86578919287441536" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="postal-code"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FY-dg-9QZ">
+                                                        <rect key="frame" x="66" y="0.0" width="10.5" height="34"/>
+                                                        <fontDescription key="fontDescription" name="AkiraExpanded-SuperBold" family="Akira Expanded" pointSize="10"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reps" textAlignment="natural" minimumFontSize="17" background="square.and.arrow.up.on.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XMk-yw-9yJ">
+                                                        <rect key="frame" x="85.5" y="0.0" width="60.5" height="34"/>
+                                                        <color key="backgroundColor" red="0.65778538639999995" green="0.96336261420000002" blue="1" alpha="0.8657891929" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="postal-code"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="IqQ-m1-3tb">
+                                                <rect key="frame" x="64" y="239" width="169" height="31"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pq-15-wyZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Add" cornerStyle="medium">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" white="1" alpha="0.39826612410000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" red="0.62732200380000003" green="1" blue="0.97549526499999994" alpha="0.8657891929" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="addExercise:" destination="Ipz-je-jmM" eventType="touchUpInside" id="Xhd-O1-o7l"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bp-AR-VM9">
+                                                        <rect key="frame" x="100.5" y="0.0" width="68.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Cancel" cornerStyle="medium">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="strokeColor" red="0.62732200380000003" green="1" blue="0.97549526499999994" alpha="0.8657891929" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </backgroundConfiguration>
+                                                            <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="closePressed:" destination="Ipz-je-jmM" eventType="touchUpInside" id="AMK-Sh-CXs"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Vb3-t3-WhL" firstAttribute="leading" secondItem="Ey8-rP-Jvs" secondAttribute="leading" constant="40" id="1sj-MQ-7cc"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vb3-t3-WhL" secondAttribute="trailing" constant="40" id="vQZ-qL-pfP"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.47647088770000001" green="0.7608608603" blue="0.74509966370000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="Ey8-rP-Jvs" firstAttribute="leading" secondItem="vzG-6o-eRH" secondAttribute="leading" constant="10" id="2Cq-OD-ba3"/>
+                                    <constraint firstItem="Ey8-rP-Jvs" firstAttribute="top" secondItem="vzG-6o-eRH" secondAttribute="top" constant="15" id="TFk-CT-uYO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ey8-rP-Jvs" secondAttribute="trailing" constant="10" id="hC9-YM-82m"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ey8-rP-Jvs" secondAttribute="bottom" constant="20" id="i0S-9F-rtm"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GI2-ZI-2Cd"/>
                         <color key="backgroundColor" white="1" alpha="0.8026929582868304" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vzG-6o-eRH" firstAttribute="top" secondItem="GI2-ZI-2Cd" secondAttribute="top" constant="203" id="cU0-9F-3JG"/>
+                            <constraint firstItem="GI2-ZI-2Cd" firstAttribute="trailing" secondItem="vzG-6o-eRH" secondAttribute="trailing" constant="48.5" id="dzc-DY-KJm"/>
+                            <constraint firstItem="vzG-6o-eRH" firstAttribute="centerX" secondItem="Nbn-H6-x8f" secondAttribute="centerX" id="fB2-vq-unE"/>
+                            <constraint firstItem="GI2-ZI-2Cd" firstAttribute="bottom" secondItem="vzG-6o-eRH" secondAttribute="bottom" constant="310" id="p2d-RT-bw2"/>
+                            <constraint firstItem="vzG-6o-eRH" firstAttribute="leading" secondItem="GI2-ZI-2Cd" secondAttribute="leading" constant="48.5" id="rjT-jx-KZ3"/>
+                        </constraints>
                         <connections>
                             <action selector="backgroundPressed:" destination="Ipz-je-jmM" eventType="touchUpInside" id="pex-lb-MD4"/>
                         </connections>
@@ -250,6 +626,9 @@
         <image name="square.and.arrow.up.on.square" catalog="system" width="117" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

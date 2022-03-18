@@ -23,6 +23,11 @@
 		351E6C9027BC98B200E35FBD /* AvenirNextLTPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 351E6C8D27BC98B200E35FBD /* AvenirNextLTPro-Regular.otf */; };
 		35B1A47F27D9697C006463AE /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B1A47E27D9697C006463AE /* CreateViewController.swift */; };
 		35B1A48327D9902F006463AE /* createPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B1A48227D9902F006463AE /* createPopupViewController.swift */; };
+		35F84DC427E2D93A00D47E71 /* ManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F84DC327E2D93A00D47E71 /* ManageViewController.swift */; };
+		35F84DC627E39A5800D47E71 /* SelectWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F84DC527E39A5800D47E71 /* SelectWorkoutViewController.swift */; };
+		35F84DC827E3C16A00D47E71 /* InWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F84DC727E3C16A00D47E71 /* InWorkoutViewController.swift */; };
+		35F84DCA27E3DD7C00D47E71 /* CompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F84DC927E3DD7C00D47E71 /* CompletedViewController.swift */; };
+		35F84DCC27E3F63000D47E71 /* background.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 35F84DCB27E3F62F00D47E71 /* background.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,11 @@
 		351E6C8D27BC98B200E35FBD /* AvenirNextLTPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AvenirNextLTPro-Regular.otf"; path = "../../../../../Downloads/New folder (10)/AvenirNextLTPro-Regular.otf"; sourceTree = "<group>"; };
 		35B1A47E27D9697C006463AE /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		35B1A48227D9902F006463AE /* createPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createPopupViewController.swift; sourceTree = "<group>"; };
+		35F84DC327E2D93A00D47E71 /* ManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageViewController.swift; sourceTree = "<group>"; };
+		35F84DC527E39A5800D47E71 /* SelectWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWorkoutViewController.swift; sourceTree = "<group>"; };
+		35F84DC727E3C16A00D47E71 /* InWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InWorkoutViewController.swift; sourceTree = "<group>"; };
+		35F84DC927E3DD7C00D47E71 /* CompletedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedViewController.swift; sourceTree = "<group>"; };
+		35F84DCB27E3F62F00D47E71 /* background.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = background.mp4; path = "../../../../Desktop/personal projects/iron log/background.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,7 @@
 		351E6C4627BC952100E35FBD = {
 			isa = PBXGroup;
 			children = (
+				35F84DC927E3DD7C00D47E71 /* CompletedViewController.swift */,
 				351E6C5127BC952200E35FBD /* Iron Log */,
 				351E6C6B27BC952400E35FBD /* Iron LogTests */,
 				351E6C7527BC952400E35FBD /* Iron LogUITests */,
@@ -114,11 +125,15 @@
 		351E6C5127BC952200E35FBD /* Iron Log */ = {
 			isa = PBXGroup;
 			children = (
+				35F84DCB27E3F62F00D47E71 /* background.mp4 */,
 				351E6C8727BC961F00E35FBD /* fonts */,
 				351E6C5227BC952200E35FBD /* AppDelegate.swift */,
 				351E6C5427BC952200E35FBD /* SceneDelegate.swift */,
 				351E6C5627BC952200E35FBD /* ViewController.swift */,
 				351E6C5827BC952200E35FBD /* Main.storyboard */,
+				35F84DC727E3C16A00D47E71 /* InWorkoutViewController.swift */,
+				35F84DC527E39A5800D47E71 /* SelectWorkoutViewController.swift */,
+				35F84DC327E2D93A00D47E71 /* ManageViewController.swift */,
 				35B1A47E27D9697C006463AE /* CreateViewController.swift */,
 				351E6C8527BC960D00E35FBD /* Akira Expanded Demo.otf */,
 				351E6C5E27BC952300E35FBD /* Assets.xcassets */,
@@ -263,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				351E6C8627BC960D00E35FBD /* Akira Expanded Demo.otf in Resources */,
+				35F84DCC27E3F63000D47E71 /* background.mp4 in Resources */,
 				351E6C6227BC952300E35FBD /* LaunchScreen.storyboard in Resources */,
 				351E6C8F27BC98B200E35FBD /* AvenirNextLTPro-It.otf in Resources */,
 				351E6C9027BC98B200E35FBD /* AvenirNextLTPro-Regular.otf in Resources */,
@@ -295,9 +311,13 @@
 			files = (
 				35B1A47F27D9697C006463AE /* CreateViewController.swift in Sources */,
 				351E6C5727BC952200E35FBD /* ViewController.swift in Sources */,
+				35F84DC827E3C16A00D47E71 /* InWorkoutViewController.swift in Sources */,
+				35F84DC627E39A5800D47E71 /* SelectWorkoutViewController.swift in Sources */,
 				351E6C5327BC952200E35FBD /* AppDelegate.swift in Sources */,
 				35B1A48327D9902F006463AE /* createPopupViewController.swift in Sources */,
 				351E6C5D27BC952200E35FBD /* Iron_Log.xcdatamodeld in Sources */,
+				35F84DC427E2D93A00D47E71 /* ManageViewController.swift in Sources */,
+				35F84DCA27E3DD7C00D47E71 /* CompletedViewController.swift in Sources */,
 				351E6C5527BC952200E35FBD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
